@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  grafana:
+    image: grafana/grafana:6.2.1
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/etc/grafana/provisioning
