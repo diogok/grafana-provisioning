@@ -2,7 +2,7 @@ apiVersion: 1
 
 providers:
   # <string> provider name
-- name: 'Node Exporter'
+- name: 'Prometheus'
   # <int> org id. will default to orgId 1 if not specified
   orgId: 1
   # <string, required> name of the dashboard folder. Required
@@ -19,4 +19,4 @@ providers:
   updateIntervalSeconds: 600  
   options:
     # <string, required> path to dashboard files on disk. Required
-    path: /etc/grafana/provisioning/dashboards/node-exporter.json
+    path: /etc/grafana/provisioning/dashboards/
